@@ -18,8 +18,14 @@
   margin: 0 auto;
 }
 
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
 nav {
   padding: 30px;
+  text-align: center;
 }
 
 nav a {
