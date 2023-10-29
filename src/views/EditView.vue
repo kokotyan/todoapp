@@ -1,5 +1,3 @@
-
-import MemoForm from '@/components/MemoForm.vue';
 <template>
     <MemoForm v-if="memo" :memo="memo" />
     <p v-else>指定されたメモはありません</p>
