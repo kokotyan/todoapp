@@ -11,20 +11,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HomeView',
-  computed: {
-    hasMemos() {
-      return this.$store.getters.getCount
-    },
-    memos () {
-      return this.$store.getters.getAll
-    }
-  }
-}
-</script>
-
 <style scoped>
 ul {
   margin: 0;
@@ -45,3 +31,17 @@ li a {
   display: block;
 }
 </style>
+
+<script>
+export default {
+  name: 'HomeView',
+  computed: {
+    hasMemos() {
+      return this.$store.getters.getCount
+    },
+    memos () {
+      return this.$store.getters.getAll
+    }
+  }
+}
+</script>

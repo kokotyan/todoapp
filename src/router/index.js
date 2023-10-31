@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NewView from '../views/NewView.vue'
 import EditView from '../views/EditView.vue'
@@ -10,12 +10,12 @@ const routes = [
     component: HomeView
   },
   {
-  path: '/new',
-  name: 'new',
-  component:NewView
+    path: '/new',
+    name: 'new',
+    component: NewView
   },
   {
-    paht: '/edit/id',
+    path: '/edit/:id',
     name: 'edit',
     component: EditView
   },
@@ -30,7 +30,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
 })
 
